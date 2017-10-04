@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.subspec 'GIF' do |gif|
     gif.ios.deployment_target = '7.0'
     gif.source_files = 'SDWebImage/FLAnimatedImage/*.{h,m}'
-    gif.dependency 'SDWebImage/Core'
+    gif.dependency 'SDWebImage/Core', '~> 0.0'
     gif.dependency 'FLAnimatedImage', '~> 1.0'
     gif.xcconfig = {
       'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/FLAnimatedImage/FLAnimatedImage'
